@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--1875-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1875"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:backgroundTint="@color/colorPrimaryLight"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_1875"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1875"/>
+            <TextView
+                android:id="@+id/tv_1875_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1875 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_1875_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To enquiry about daily life"
+                android:layout_below="@+id/tv_1875_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--1876-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1876"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_1876"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1876"/>
+            <TextView
+                android:id="@+id/tv_1876_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1876 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_1876_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry for whant want to know eaily"
+                android:layout_below="@+id/tv_1876_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--1877-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1877"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_1877"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1877"/>
+            <TextView
+                android:id="@+id/tv_ministry_of_immigration_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1877 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_ministry_of_immigration_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthcare make it easy"
+                android:layout_below="@+id/tv_ministry_of_immigration_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--1880-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1880"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_ambulance"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1880"/>
+            <TextView
+                android:id="@+id/tv_ambulance_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1880 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_ambulance_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry for highway emergency help"
+                android:layout_below="@+id/tv_ambulance_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--1883-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1883"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_1883"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1883"/>
+            <TextView
+                android:id="@+id/tv_1883_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1883 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_1883_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry for what you want to know"
+                android:layout_below="@+id/tv_1883_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!--1886-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_1886"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_1886"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_1886"/>
+            <TextView
+                android:id="@+id/tv_1886_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1886 Hot Line"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_1886_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enquiry for whant strange news"
+                android:layout_below="@+id/tv_1886_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

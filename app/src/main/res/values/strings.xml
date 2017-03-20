@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BOCC</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_hotline">Hotline</string>
+    <string name="lbl_news">News</string>
+    <string name="lbl_football">Football</string>
+    <string name="lbl_fortune">Fortune</string>
+    <string name="lbl_beauty_tip">Beauty Tips</string>
+    <string name="title_activity_hot_line_detail">HotLineDetailActivity</string>
+
+    <string name="sample_text_px0.5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </string>
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="sample_text_px2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="sample_text_px3">\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. \n\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="ger_sample1">15/1 CBCC USD 1360-1367Ks \n SGD 960-969Ks \n EUR 1438-1450 Ks.</string>
+    <string name="ger_sample2">15/2 GOLD LDN 1204.40 \n YGN 883500 \n MDY 883000 \n 1USD 1365-1366 \n ERN 1470-1471 \n 1USD=0.941EUR \n 1USD=1.413SGD \n 1USD=35.263THB \n 1USD=6.912CNY \n 1USD=4.448MYR \n 1USD=114.747JPY</string>
+    <string name="ger_sample3">15/3 GOLD LDN 1202.90\nYGN 883000\nMDY 882500\n1USD 1365-1366\nERN 1370-1371\n1USD=0.940EUR\n1USD=1.412SGD\n1USD=35.233THB\n1USD=6.911CNY\n1USD=4.447MYR\n1USD=114.666JPY</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

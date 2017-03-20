@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mm.com.blueplanet.bocc.fragment.NewsFragment"
+    tools:showIn="@layout/fragment_news">
+
+    <TextView
+        android:id="@+id/tv_ger_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gold and Exchange Rate"
+        android:textSize="@dimen/text_heading_1x"
+        android:textColor="@color/white"
+        android:background="@color/Teal500"/>
+    <HorizontalScrollView
+        android:id="@+id/hsv_ger"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/tv_ger_heading">
+
+        <include layout="@layout/ger_card_list"/>
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tv_news_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News"
+        android:textSize="@dimen/text_heading_1x"
+        android:layout_below="@id/hsv_ger"
+        android:textColor="@color/white"
+        android:background="@color/Teal500"/>
+    <ScrollView
+        android:id="@+id/sv_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_news_heading"
+        >
+        <include layout="@layout/news_card_list"/>
+    </ScrollView>
+
+
+</RelativeLayout>

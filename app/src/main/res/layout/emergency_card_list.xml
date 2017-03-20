@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Highway Ambulance-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_highway_ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_highway_ambulance"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_high_way_ambulance"/>
+            <TextView
+                android:id="@+id/tv_highway_ambulance_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Way Ambulance"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_president_office_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For emergency case"
+                android:layout_below="@+id/tv_highway_ambulance_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Police -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_police"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_police"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_police"/>
+            <TextView
+                android:id="@+id/tv_police_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Police Department"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_police_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To get help from police"
+                android:layout_below="@+id/tv_police_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Fire station -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_fire_station"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_fire_station"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_fire" />
+            <TextView
+                android:id="@+id/tv_fire_station_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fire Station"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_fire_station_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthcare make it easy"
+                android:layout_below="@+id/tv_fire_station_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Ambulance -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_ambulance"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:elevation="@dimen/card_elevation"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium_2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_ambulance"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_ambulance"/>
+            <TextView
+                android:id="@+id/tv_ambulance_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambulance"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/tv_ambulance_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call for emergency"
+                android:layout_below="@+id/tv_ambulance_header"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>
