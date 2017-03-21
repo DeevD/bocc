@@ -5,16 +5,15 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
             >
             <TextView
                 android:id="@+id/tv_tip1_date"
@@ -37,16 +36,15 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
             >
             <TextView
                 android:id="@+id/tv_tip2_date"
@@ -69,17 +67,15 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_tip3_date"
                 android:layout_width="wrap_content"
@@ -101,17 +97,15 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_tip4_date"
                 android:layout_width="wrap_content"
@@ -133,17 +127,15 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_tip5_date"
                 android:layout_width="wrap_content"
@@ -165,17 +157,15 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_tip6_date"
                 android:layout_width="wrap_content"
@@ -197,18 +187,13 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="96dp"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2"
-        android:layout_marginBottom="@dimen/margin_medium">
+        android:layout_height="@dimen/cardViewMiniHeight2"
+        style="@style/cardView">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_small"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_tip7_date"
                 android:layout_width="wrap_content"

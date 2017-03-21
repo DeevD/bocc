@@ -13,4 +13,7 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="Teal500">#009688</color>
+    <color name="BlueA200">#448aff</color>
+    <color name="Blue900">#0d47a1</color>
+
 </resources>

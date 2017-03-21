@@ -5,8 +5,7 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="128dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
@@ -14,8 +13,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_news_heading_bbc"
                 android:layout_width="wrap_content"
@@ -44,8 +43,7 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="128dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
@@ -53,8 +51,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_news_heading_7days"
                 android:layout_width="wrap_content"
@@ -83,8 +81,7 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="128dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
@@ -92,8 +89,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_news_heading_mizzima"
                 android:layout_width="wrap_content"
@@ -122,8 +119,7 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="128dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
@@ -131,8 +127,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight">
             <TextView
                 android:id="@+id/tv_news_heading_eleven"
                 android:layout_width="wrap_content"
@@ -161,8 +157,7 @@
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="128dp"
+        android:layout_height="@dimen/cardViewMiniHeight2"
         android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
@@ -170,8 +165,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
             >
+
             <TextView
                 android:id="@+id/tv_news_heading_bbc2"
                 android:layout_width="wrap_content"
