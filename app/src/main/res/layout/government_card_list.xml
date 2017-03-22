@@ -8,7 +8,7 @@
         android:id="@+id/cv_president_office"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="96dp"
+        android:minHeight="72dp"
         android:elevation="@dimen/card_elevation"
         style="@style/cardView">
         <RelativeLayout
@@ -17,9 +17,10 @@
             android:background="@color/colorPrimaryLight">
             <ImageView
                 android:id="@+id/iv_president_office"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/ic_president_office"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_president_office"
+                android:layout_centerVertical="true"/>
             <TextView
                 android:id="@+id/tv_president_office_header"
                 android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
                 android:text="President Office"
                 android:textSize="@dimen/text_regular_3x"
                 android:textStyle="bold"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="16dp"/>
             <TextView
                 android:id="@+id/tv_president_office_description"
@@ -35,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="To contact to Myanmar President Office"
                 android:layout_below="@+id/tv_president_office_header"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="8dp"/>
 
         </RelativeLayout>
@@ -48,7 +49,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cv_labour_ministry"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="72dp"
         android:elevation="@dimen/card_elevation"
         style="@style/cardView"
         >
@@ -58,9 +59,10 @@
             android:background="@color/colorPrimaryLight">
             <ImageView
                 android:id="@+id/iv_labour_ministry"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/ic_labour"/>
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_labour"
+                android:layout_centerVertical="true"/>
             <TextView
                 android:id="@+id/tv_labour_ministry_header"
                 android:layout_width="wrap_content"
@@ -68,7 +70,7 @@
                 android:text="Ministry of Labour"
                 android:textSize="@dimen/text_regular_3x"
                 android:textStyle="bold"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="16dp"/>
             <TextView
                 android:id="@+id/tv_labour_ministry_description"
@@ -76,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:text="To contact to ministry of labour"
                 android:layout_below="@+id/tv_labour_ministry_header"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="8dp"/>
 
         </RelativeLayout>
@@ -89,7 +91,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/cv_ministry_of_immigration"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="72dp"
         android:elevation="@dimen/card_elevation"
         style="@style/cardView">
         <RelativeLayout
@@ -98,9 +100,10 @@
             android:background="@color/colorPrimaryLight">
             <ImageView
                 android:id="@+id/iv_fire_station"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/ic_moip" />
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_moip"
+                android:layout_centerVertical="true"/>
             <TextView
                 android:id="@+id/tv_ministry_of_immigration_header"
                 android:layout_width="wrap_content"
@@ -108,7 +111,7 @@
                 android:text="MOIP"
                 android:textSize="@dimen/text_regular_3x"
                 android:textStyle="bold"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="16dp"/>
             <TextView
                 android:id="@+id/tv_ministry_of_immigration_description"
@@ -116,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="To contact to ministry of immigration"
                 android:layout_below="@+id/tv_ministry_of_immigration_header"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="56dp"
                 android:layout_marginTop="8dp"/>
 
         </RelativeLayout>
