@@ -16,5 +16,7 @@
     <string name="ger_sample2">15/2 GOLD LDN 1204.40 \n YGN 883500 \n MDY 883000 \n 1USD 1365-1366 \n ERN 1470-1471 \n 1USD=0.941EUR \n 1USD=1.413SGD \n 1USD=35.263THB \n 1USD=6.912CNY \n 1USD=4.448MYR \n 1USD=114.747JPY</string>
     <string name="ger_sample3">15/3 GOLD LDN 1202.90\nYGN 883000\nMDY 882500\n1USD 1365-1366\nERN 1370-1371\n1USD=0.940EUR\n1USD=1.412SGD\n1USD=35.233THB\n1USD=6.911CNY\n1USD=4.447MYR\n1USD=114.666JPY</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_open">Open navigation drawer</string>
+    <string name="navigation_close">Close Navigation Drawer</string>
 
 </resources>
