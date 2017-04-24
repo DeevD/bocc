@@ -1,4 +1,4 @@
-<resources>
+<resources >
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -27,6 +27,24 @@
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:maxLines">4</item>
         <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium_2</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium_2</item>
+    </style>
+    <style name="CustomTheme" parent="@android:style/Theme">
+        <item name="android:tabWidgetStyle">@style/CustomTabWidget</item>
+    </style>
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+    </style>
+    <style name="CustomTabWidgetText"
+        parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

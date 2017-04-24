@@ -7,42 +7,59 @@
     tools:context="mm.com.blueplanet.bocc.fragment.NewsFragment"
     tools:showIn="@layout/fragment_news">
 
-    <TextView
-        android:id="@+id/tv_ger_heading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Gold and Exchange Rate"
-        android:textSize="@dimen/text_heading_1x"
-        android:textColor="@color/white"
-        android:background="@color/Teal500"/>
-    <HorizontalScrollView
-        android:id="@+id/hsv_ger"
-        android:layout_width="match_parent"
-        android:layout_height="216dp"
-        android:animateLayoutChanges="true"
-        android:scrollbars="none"
-        android:layout_below="@+id/tv_ger_heading">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_ger_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gold and Exchange Rate"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:background="@color/Blue900"/>
+                <HorizontalScrollView
+                    android:id="@+id/hsv_ger"
+                    android:layout_width="match_parent"
+                    android:layout_height="216dp"
+                    android:animateLayoutChanges="true"
+                    android:scrollbars="none"
+                    android:layout_below="@+id/tv_ger_heading">
 
-        <include layout="@layout/ger_card_list"/>
+                    <include layout="@layout/ger_card_list"/>
 
-    </HorizontalScrollView>
-    <TextView
-        android:id="@+id/tv_news_heading"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="News"
-        android:textSize="@dimen/text_heading_1x"
-        android:layout_below="@id/hsv_ger"
-        android:textColor="@color/white"
-        android:background="@color/Teal500"/>
-    <ScrollView
-        android:id="@+id/sv_news"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tv_news_heading"
-        >
-        <include layout="@layout/news_card_list"/>
-    </ScrollView>
+                </HorizontalScrollView>
+                <TextView
+                    android:id="@+id/tv_news_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="News"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:layout_below="@id/hsv_ger"
+                    android:textColor="@color/white"
+                    android:background="@color/Blue900"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"/>
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/sv_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_news_heading"
+                    >
+                    <include layout="@layout/news_card_list"/>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
 
 
 </RelativeLayout>

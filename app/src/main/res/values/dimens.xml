@@ -6,6 +6,7 @@
 
     <!-- Generic with ratio -->
     <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_v_small">2dp</dimen>
     <dimen name="margin_medium">8dp</dimen>
     <dimen name="margin_medium_2">16dp</dimen>
     <dimen name="margin_medium_3">18dp</dimen>
@@ -13,6 +14,9 @@
     <dimen name="margin_xlarge">32dp</dimen>
 
     <dimen name="text_small">12sp</dimen>
+    <dimen name="text_small_2">11sp</dimen>
+    <dimen name="text_small_3">10sp</dimen>
+    <dimen name="text_small_4">9sp</dimen>
     <dimen name="text_regular">14sp</dimen>
     <dimen name="text_regular_2x">16sp</dimen>
     <dimen name="text_regular_3x">20sp</dimen>
@@ -42,6 +46,8 @@
 
     <dimen name="icon_in_detail">48dp</dimen>
     <dimen name="margin_top_profile_pic">60dp</dimen>
-
     <dimen name="screen_title_size">19sp</dimen>
+
+    <dimen name="cardViewMiniHeight">96dp</dimen>
+    <dimen name="cardViewMiniHeight2">128dp</dimen>
 </resources>

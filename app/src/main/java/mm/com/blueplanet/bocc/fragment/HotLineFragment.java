@@ -11,8 +11,13 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
+import android.widget.TabWidget;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,6 +32,8 @@ public class HotLineFragment extends Fragment {
 
     @BindView(R.id.th_hot_line_tab_host)
     TabHost thHotLine;
+
+
 
 
     public static HotLineFragment newInstance(){
@@ -47,6 +54,8 @@ public class HotLineFragment extends Fragment {
 
 
 
+
+
         return  rootView;
     }
 
@@ -61,18 +70,27 @@ public class HotLineFragment extends Fragment {
         spec.setContent(R.id.tab_our_call_center);
         spec.setIndicator("Call Center");
         tabHost.addTab(spec);
+        TextView tvCallCenter = (TextView) tabHost.getTabWidget().getChildAt(0).findViewById(android.R.id.title);
+        tvCallCenter.setTextSize(13);
+
 
         //Emergency Tab
         spec = tabHost.newTabSpec("Emergency");
         spec.setContent(R.id.tab_emergency);
         spec.setIndicator("Emergency");
         tabHost.addTab(spec);
+        TextView tvEmergency = (TextView) tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.title);
+        tvEmergency.setTextSize(13);
 
         //Government Tab
         spec = tabHost.newTabSpec("Government");
         spec.setContent(R.id.tab_government);
         spec.setIndicator("Government");
         tabHost.addTab(spec);
+        TextView tvGovernment = (TextView) tabHost.getTabWidget().getChildAt(2).findViewById(android.R.id.title);
+        tvGovernment.setTextSize(13);
+
+
     }
 
     @OnClick(R.id.cv_1875)
