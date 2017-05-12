@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_about_us"
+            android:enabled="true"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="About Us"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_take_a_tour"
+            android:enabled="true"
+            android:icon="@drawable/ic_card_travel_black_24dp"
+            android:title="Take a tour"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_favourite"
+            android:enabled="true"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favourite"
+            app:showAsAction="ifRoom"/>
+    </group>
+
 
 </menu>
