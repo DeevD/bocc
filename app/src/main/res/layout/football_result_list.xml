@@ -120,6 +120,17 @@
     </LinearLayout>
     <!--Today Content-->
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center"
+        android:maxHeight="48dp"
+        android:minHeight="32dp"
+        android:text="AFC Bouremouth 1 - 1 Manchester City"
+        android:textColor="@color/black" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="32dp"
@@ -177,15 +188,6 @@
             />
     </LinearLayout>
     <!--6th, February, 2017 Content-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="32dp"
-        android:maxHeight="48dp"
-        android:background="@color/colorPrimaryLight"
-        android:gravity="center"
-        android:text="AFC Bouremouth 1 - 1 Manchester City"
-        android:textColor="@color/black"/>
 
     <!--1st, February, 2017 Heading-->
     <LinearLayout
