@@ -11,8 +11,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <include layout="@layout/football_result_list"/>
+
     </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_footballResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_medium_2"
+        />
 
 
 </RelativeLayout>
