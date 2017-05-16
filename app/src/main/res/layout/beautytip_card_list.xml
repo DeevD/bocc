@@ -24,7 +24,7 @@
                 android:id="@+id/tv_tip1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip1_date"/>
 
@@ -55,7 +55,7 @@
                 android:id="@+id/tv_tip2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip2_date"/>
 
@@ -85,7 +85,7 @@
                 android:id="@+id/tv_tip3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip3_date"/>
 
@@ -115,7 +115,7 @@
                 android:id="@+id/tv_tip4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip4_date"/>
 
@@ -145,7 +145,7 @@
                 android:id="@+id/tv_tip5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip5_date"/>
 
@@ -175,7 +175,7 @@
                 android:id="@+id/tv_tip6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip6_date"/>
 
@@ -203,7 +203,7 @@
                 android:id="@+id/tv_tip7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_marginTop="@dimen/margin_medium"
                 android:layout_below="@+id/tv_tip7_date"
                 />

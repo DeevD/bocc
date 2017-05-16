@@ -40,6 +40,7 @@ public class FootballFragment extends Fragment {
     //Timeout counts are in milli-second
     public static final int  CONNECTION_TIMEOUT = 10000;
     public static final int READ_TIMEOUT = 150000;
+    private static final String API_KEY = "04ec12fb6fbe96d25a4d5186b221596a";
     public View mView;
     private RecyclerView mRVFootballResult;
     private AdapterFootballResult mAdapter;
@@ -77,7 +78,8 @@ public class FootballFragment extends Fragment {
         protected String doInBackground(String... params) {
             try{
                 //A URL that produce json format and is either json file or php
-                url = new URL("http://ooredoo.blueplanet.com.mm/bocc/?route=football_result");
+                //url = new URL("http://ooredoo.blueplanet.com.mm/bocc/?route=football_result&api_key="+API_KEY);
+                url = new URL("http://192.168.100.195/bocc/?route=football_result&api_key="+API_KEY);
                 //url = new URL("http://192.168.100.195/bocc/store/result_sample.json");
 
             } catch (MalformedURLException e) {

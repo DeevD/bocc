@@ -32,7 +32,7 @@
                 android:id="@+id/tv_news_content_bbc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_below="@id/tv_news_heading_bbc"
                 android:layout_marginTop="@dimen/margin_medium"/>
 
@@ -70,7 +70,7 @@
                 android:id="@+id/tv_news_content_7days"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_below="@id/tv_news_heading_7days"
                 android:layout_marginTop="@dimen/margin_medium"/>
 
@@ -108,7 +108,7 @@
                 android:id="@+id/tv_news_content_mizzima"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_below="@id/tv_news_heading_mizzima"
                 android:layout_marginTop="@dimen/margin_medium"/>
 
@@ -146,7 +146,7 @@
                 android:id="@+id/tv_news_content_bbc_eleven"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_below="@id/tv_news_heading_eleven"
                 android:layout_marginTop="@dimen/margin_medium"/>
 
@@ -186,7 +186,7 @@
                 android:id="@+id/tv_news_content_bbc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="@content/sample_text_px0.5"
                 android:layout_below="@id/tv_news_heading_bbc2"
                 android:layout_marginTop="@dimen/margin_medium"/>
 
