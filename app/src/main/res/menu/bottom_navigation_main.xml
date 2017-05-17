@@ -6,31 +6,31 @@
         android:id="@+id/action_hot_line"
         android:enabled="true"
         android:icon="@drawable/ic_phone_in_talk_black_24dp"
-        android:title="@string/lbl_hotline"
+        android:title="@content/lbl_hotline"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_news"
         android:enabled="true"
         android:icon="@drawable/ic_receipt_black_24dp"
-        android:title="@string/lbl_news"
+        android:title="@content/lbl_news"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_football"
         android:enabled="true"
         android:icon="@drawable/ic_football"
-        android:title="@string/lbl_football"
+        android:title="@content/lbl_football"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_fortune"
         android:enabled="true"
         android:icon="@drawable/ic_horoscope"
-        android:title="@string/lbl_fortune"
+        android:title="@content/lbl_fortune"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_beauty_tip"
         android:enabled="true"
         android:icon="@drawable/ic_beauty_tip"
-        android:title="@string/lbl_beauty_tip"
+        android:title="@content/lbl_beauty_tip"
         app:showAsAction="ifRoom"/>
 
 </menu>

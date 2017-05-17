@@ -16,204 +16,24 @@
             android:background="@color/colorPrimaryLight"
             >
             <TextView
-                android:id="@+id/tv_tip1_date"
+                android:id="@+id/tv_tip_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20th, March, 2017"/>
             <TextView
-                android:id="@+id/tv_tip1"
+                android:id="@+id/tv_tip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, culpa delectus dicta distinctio doloribus earum eveniet illo ipsam ipsum itaque magni molestiae omnis quam quibusdam velit veniam vero voluptas voluptatibus. "
                 android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip1_date"/>
+                android:layout_below="@+id/tv_tip_date"/>
 
 
 
         </RelativeLayout>
 
-
     </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight"
-            >
-            <TextView
-                android:id="@+id/tv_tip2_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip2_date"/>
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight">
-            <TextView
-                android:id="@+id/tv_tip3_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="18th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip3_date"/>
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight">
-            <TextView
-                android:id="@+id/tv_tip4_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="17th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip4_date"/>
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight">
-            <TextView
-                android:id="@+id/tv_tip5_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip5_date"/>
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight">
-            <TextView
-                android:id="@+id/tv_tip6_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip6_date"/>
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/cardViewMiniHeight2"
-        style="@style/cardView">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimaryLight">
-            <TextView
-                android:id="@+id/tv_tip7_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="14th, March, 2017"/>
-            <TextView
-                android:id="@+id/tv_tip7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_text_px0.5"
-                android:layout_marginTop="@dimen/margin_medium"
-                android:layout_below="@+id/tv_tip7_date"
-                />
-
-
-
-        </RelativeLayout>
-
-
-    </android.support.v7.widget.CardView>
 
 
 

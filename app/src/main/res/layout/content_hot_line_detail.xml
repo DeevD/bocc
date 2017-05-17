@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_behavior="@content/appbar_scrolling_view_behavior"
     tools:context="mm.com.blueplanet.bocc.activity.HotLineDetailActivity"
     tools:showIn="@layout/activity_hot_line_detail">
 
@@ -25,12 +25,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px3"
+                android:text="@content/sample_text_px3"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sample_text_px3"
+                android:text="@content/sample_text_px3"
                 />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
