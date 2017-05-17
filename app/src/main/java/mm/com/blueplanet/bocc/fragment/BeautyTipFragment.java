@@ -27,4 +27,5 @@ public class BeautyTipFragment extends Fragment{
 
         return view;
     }
+
 }
