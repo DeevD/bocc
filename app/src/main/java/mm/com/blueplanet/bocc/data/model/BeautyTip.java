@@ -23,6 +23,8 @@ public class BeautyTip {
         this.content = content;
     }
 
+
+
     public Integer getId() {
         return id;
     }

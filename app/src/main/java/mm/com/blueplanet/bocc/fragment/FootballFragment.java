@@ -30,6 +30,7 @@ import java.util.List;
 import mm.com.blueplanet.bocc.R;
 import mm.com.blueplanet.bocc.adapter.AdapterFootballResult;
 import mm.com.blueplanet.bocc.data.DataFootballResult;
+import mm.com.blueplanet.bocc.utility.Constants;
 
 /**
  * Created by smmon on 3/13/17.
@@ -40,7 +41,7 @@ public class FootballFragment extends Fragment {
     //Timeout counts are in milli-second
     public static final int  CONNECTION_TIMEOUT = 10000;
     public static final int READ_TIMEOUT = 150000;
-    private static final String API_KEY = "04ec12fb6fbe96d25a4d5186b221596a";
+    //private static final String API_KEY = Constants.API_kEY;
     public View mView;
     private RecyclerView mRVFootballResult;
     private AdapterFootballResult mAdapter;
@@ -78,8 +79,7 @@ public class FootballFragment extends Fragment {
         protected String doInBackground(String... params) {
             try{
                 //A URL that produce json format and is either json file or php
-                //url = new URL("http://ooredoo.blueplanet.com.mm/bocc/?route=football_result&api_key="+API_KEY);
-                url = new URL("http://192.168.100.195/bocc/?route=football_result&api_key="+API_KEY);
+                url = new URL(Constants.BASE_URL+"?route=football_result&api_key="+Constants.API_kEY);
                 //url = new URL("http://192.168.100.195/bocc/store/result_sample.json");
 
             } catch (MalformedURLException e) {
@@ -139,7 +139,7 @@ public class FootballFragment extends Fragment {
             pdLoading.dismiss();
             List<DataFootballResult> data = new ArrayList<>();
             pdLoading.dismiss();
-            Log.d("#API_Data", result);
+            //Log.d("#API_Data", result);
 
             try {
                 JSONArray jArray = new JSONArray(result);

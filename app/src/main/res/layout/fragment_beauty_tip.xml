@@ -5,15 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mm.com.blueplanet.bocc.fragment.BeautyTipFragment"
-    tools:showIn="@layout/fragment_beauty_tip">
-
-    <!--Change Title when fragment change-->
-    <ScrollView
+    tools:showIn="@layout/fragment_beauty_tip"
+    android:background="#c7cbe8"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/violet_summer"
+        android:scaleType="centerCrop"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_beautyTip"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/margin_medium">
-        <include layout="@layout/beautytip_card_list"/>
-    </ScrollView>
+        android:scrollbars="vertical"/>
 
 
 
