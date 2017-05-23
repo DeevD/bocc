@@ -6,18 +6,22 @@
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/margin_medium"
     tools:context="mm.com.blueplanet.bocc.fragment.FootballFragment"
-    tools:showIn="@layout/fragment_football">
+    tools:showIn="@layout/fragment_football"
+    >
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </ScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/football_wallpaper1"
+        android:scaleType="fitCenter"
+        android:alpha="0.35"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_footballResult"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/margin_medium_2"
+        android:scrollbars="vertical"
+
         />
 
 

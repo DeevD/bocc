@@ -19,7 +19,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@content/ger_sample1"
+                android:text="@string/ger_sample1"
                 android:layout_marginTop="4dp"/>
 
         </LinearLayout>
@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@content/ger_sample2"
+                android:text="@string/ger_sample2"
                 android:layout_marginTop="4dp"/>
 
         </LinearLayout>
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@content/ger_sample3"
+                android:text="@string/ger_sample3"
                 android:layout_marginTop="4dp"/>
 
         </LinearLayout>

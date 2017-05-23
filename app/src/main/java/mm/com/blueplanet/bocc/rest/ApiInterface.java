@@ -13,4 +13,9 @@ public interface ApiInterface {
 
     @GET("?route=latest_beauty_tip")
     Call<BeautyTipResponse> getLatestBeautyTip(@Query("api_key") String api_key);
+
+    //@GET("?route=latest_gold_and_exchange_rate")
+
+
+
 }

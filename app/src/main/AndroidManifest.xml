@@ -2,16 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mm.com.blueplanet.bocc">
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".BOCCApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@content/app_name"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.HomeActivity"
-            android:label="@content/app_name"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +23,7 @@
         </activity>
         <activity
             android:name=".activity.HotLineDetailActivity"
-            android:label="@content/title_activity_hot_line_detail"
+            android:label="@string/title_activity_hot_line_detail"
             android:parentActivityName=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -30,7 +32,7 @@
         </activity>
         <activity
             android:name=".activity.FortuneDetailActivity"
-            android:label="@content/title_activity_main"
+            android:label="@string/title_activity_main"
             android:parentActivityName=".activity.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
