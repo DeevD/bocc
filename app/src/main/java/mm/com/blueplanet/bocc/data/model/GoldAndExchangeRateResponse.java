@@ -13,7 +13,7 @@ public class GoldAndExchangeRateResponse {
     private int page;
 
     @SerializedName("results")
-    private List<BeautyTip> results;
+    private List<GoldAndExchangeRate> results;
 
     @SerializedName("total_result")
     private int totalResults;
@@ -26,7 +26,7 @@ public class GoldAndExchangeRateResponse {
         return page;
     }
 
-    public List<BeautyTip> getResults() {
+    public List<GoldAndExchangeRate> getResults() {
         return results;
     }
 
@@ -42,7 +42,7 @@ public class GoldAndExchangeRateResponse {
         this.page = page;
     }
 
-    public void setResults(List<BeautyTip> results) {
+    public void setResults(List<GoldAndExchangeRate> results) {
         this.results = results;
     }
 
