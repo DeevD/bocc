@@ -18,8 +18,11 @@ import java.util.List;
 import mm.com.blueplanet.bocc.BOCCApp;
 import mm.com.blueplanet.bocc.R;
 import mm.com.blueplanet.bocc.adapter.AdapterGoldAndExchangeRate;
+import mm.com.blueplanet.bocc.adapter.AdapterNews;
 import mm.com.blueplanet.bocc.data.model.GoldAndExchangeRate;
 import mm.com.blueplanet.bocc.data.model.GoldAndExchangeRateResponse;
+import mm.com.blueplanet.bocc.data.model.News;
+import mm.com.blueplanet.bocc.data.model.NewsResponse;
 import mm.com.blueplanet.bocc.rest.ApiClient;
 import mm.com.blueplanet.bocc.rest.ApiInterface;
 import mm.com.blueplanet.bocc.utility.Constants;
@@ -48,8 +51,10 @@ public class NewsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_news, container, false);
         mRvGer = (RecyclerView) view.findViewById(R.id.rv_gold_and_exchange_rate);
-        mRvGer.setLayoutManager(new LinearLayoutManager(BOCCApp.getContext(), LinearLayoutManager.HORIZONTAL, false));
+        mRvNews = (RecyclerView) view.findViewById(R.id.rv_news);
 
+        mRvGer.setLayoutManager(new LinearLayoutManager(BOCCApp.getContext(), LinearLayoutManager.HORIZONTAL, false));
+        mRvNews.setLayoutManager(new LinearLayoutManager(BOCCApp.getContext()));
 
 
         initGerContent();
@@ -62,6 +67,11 @@ public class NewsFragment extends Fragment {
         List<GoldAndExchangeRate> sampleData = new ArrayList<GoldAndExchangeRate>();
         mRvGer.setAdapter(new AdapterGoldAndExchangeRate(sampleData, R.layout.ger_card_list, BOCCApp.getContext()));
 
+    }
+    private void  initNewsContent()
+    {
+        List<News> sampleData = new ArrayList<News>();
+        mRvNews.setAdapter(new AdapterNews(sampleData, R.layout.news_card_list, BOCCApp.getContext()));
     }
 
     private void loadDataFromAPI()
@@ -99,9 +109,9 @@ public class NewsFragment extends Fragment {
 
                         mRvGer.setAdapter(new AdapterGoldAndExchangeRate(goldAndExchangeRates, R.layout.ger_card_list, BOCCApp.getContext()));
                     }
-                    if(mProgressDialog.isShowing()){
+                    /*if(mProgressDialog.isShowing()){
                         mProgressDialog.dismiss();
-                    }
+                    }*/
 
                 }
 
@@ -117,8 +127,34 @@ public class NewsFragment extends Fragment {
                 mProgressDialog.dismiss();
             }
         }
-        finally {
 
+        try {
+            ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
+            Call<NewsResponse> callNews = apiService.getLatestNews(Constants.API_kEY);
+            callNews.enqueue(new Callback<NewsResponse>() {
+                @Override
+                public void onResponse(Call<NewsResponse> call, Response<NewsResponse> response) {
+                    int  statusCode = response.code();
+                    if(statusCode == HttpURLConnection.HTTP_OK){
+                        List<News> newses = response.body().getResults();
+                        mRvNews.setAdapter(new AdapterNews(newses, R.layout.news_card_list, BOCCApp.getContext()));
+                    }
+                    if(mProgressDialog.isShowing()){
+                        mProgressDialog.dismiss();
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<NewsResponse> call, Throwable t) {
+                    Log.e(TAG, t.toString());
+                }
+            });
+        }catch (Exception e){
+            Log.d(TAG, "retrofit block : " + e.toString());
+            if(mProgressDialog.isShowing()){
+                mProgressDialog.dismiss();
+            }
         }
+
     }
 }

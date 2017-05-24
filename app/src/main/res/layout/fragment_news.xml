@@ -47,7 +47,12 @@
                     android:layout_height="match_parent"
                     android:layout_below="@+id/tv_news_heading"
                     >
-                    <include layout="@layout/news_card_list"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_medium_2"
+                        android:scrollbars="vertical"/>
                 </android.support.v4.widget.NestedScrollView>
             </LinearLayout>
         </ScrollView>
