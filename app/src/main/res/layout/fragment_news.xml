@@ -5,12 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mm.com.blueplanet.bocc.fragment.NewsFragment"
-    tools:showIn="@layout/fragment_news">
+    tools:showIn="@layout/fragment_news"
+    android:background="#a8c1fa">
 
-        <ScrollView
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maxresdefault_1000"
+        android:scaleType="centerCrop"/>
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:background="#99BBDEFB">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -28,7 +37,6 @@
                 android:id="@+id/rv_gold_and_exchange_rate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/margin_medium_2"
                 android:scrollbars="horizontal"/>
                 <TextView
                     android:id="@+id/tv_news_heading"
@@ -51,7 +59,6 @@
                         android:id="@+id/rv_news"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="@dimen/margin_medium_2"
                         android:scrollbars="vertical"/>
                 </android.support.v4.widget.NestedScrollView>
             </LinearLayout>

@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/cardViewMiniHeight2"
-        android:paddingBottom="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginLeft="@dimen/margin_medium_2"
         android:layout_marginRight="@dimen/margin_medium_2"
@@ -18,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="@dimen/cardViewMiniHeight2"
-            android:background="@color/colorPrimaryLight"
+            android:background="#201e86e5"
+            android:padding="@dimen/margin_small"
             >
             <mm.com.blueplanet.bocc.component.textView.MMTextView
                 android:id="@+id/tv_news_heading"
