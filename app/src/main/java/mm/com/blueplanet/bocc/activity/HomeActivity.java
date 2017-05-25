@@ -1,5 +1,7 @@
 package mm.com.blueplanet.bocc.activity;
-
+/*
+*  Testing source tree comment
+* */
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
