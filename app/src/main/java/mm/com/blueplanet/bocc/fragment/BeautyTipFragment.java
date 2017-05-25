@@ -114,9 +114,10 @@ public class BeautyTipFragment extends Fragment {
                         Log.d(TAG, "results : "+beautyTips.toString());
                         m_rv_BeautyTip.setAdapter(new AdapterBeautyTip(beautyTips, R.layout.beautytip_card_list, getContext()));
 
-                        if(mProgressDialog.isShowing()){
-                            mProgressDialog.dismiss();
-                        }
+
+                    }
+                    if(mProgressDialog.isShowing()){
+                        mProgressDialog.dismiss();
                     }
 
                 }

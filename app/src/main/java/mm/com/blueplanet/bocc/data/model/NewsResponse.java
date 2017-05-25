@@ -5,15 +5,16 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * Created by smmon on 5/23/17.
+ * Created by smmon on 5/24/17.
  */
 
-public class GoldAndExchangeRateResponse {
+public class NewsResponse
+{
     @SerializedName("page")
     private int page;
 
     @SerializedName("results")
-    private List<GoldAndExchangeRate> results;
+    private List<News> results;
 
     @SerializedName("total_result")
     private int totalResults;
@@ -26,7 +27,7 @@ public class GoldAndExchangeRateResponse {
         return page;
     }
 
-    public List<GoldAndExchangeRate> getResults() {
+    public List<News> getResults() {
         return results;
     }
 
@@ -42,7 +43,7 @@ public class GoldAndExchangeRateResponse {
         this.page = page;
     }
 
-    public void setResults(List<GoldAndExchangeRate> results) {
+    public void setResults(List<News> results) {
         this.results = results;
     }
 

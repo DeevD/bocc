@@ -5,12 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mm.com.blueplanet.bocc.fragment.NewsFragment"
-    tools:showIn="@layout/fragment_news">
+    tools:showIn="@layout/fragment_news"
+    android:background="#a8c1fa">
 
-        <ScrollView
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maxresdefault_1000"
+        android:scaleType="centerCrop"/>
+    <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            android:paddingBottom="@dimen/margin_medium_2"
+            android:background="#99BBDEFB">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -24,24 +33,18 @@
                     android:textColor="@color/white"
                     android:paddingLeft="@dimen/margin_medium"
                     android:background="@color/Blue900"/>
-                <HorizontalScrollView
-                    android:id="@+id/hsv_ger"
-                    android:layout_width="match_parent"
-                    android:layout_height="216dp"
-                    android:animateLayoutChanges="true"
-                    android:scrollbars="none"
-                    android:layout_below="@+id/tv_ger_heading">
-
-                    <include layout="@layout/ger_card_list"/>
-
-                </HorizontalScrollView>
+                <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_gold_and_exchange_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"/>
                 <TextView
                     android:id="@+id/tv_news_heading"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="News"
                     android:textSize="@dimen/text_regular_2x"
-                    android:layout_below="@id/hsv_ger"
+                    android:layout_below="@id/rv_gold_and_exchange_rate"
                     android:textColor="@color/white"
                     android:background="@color/Blue900"
                     android:paddingLeft="@dimen/margin_medium"
@@ -52,7 +55,11 @@
                     android:layout_height="match_parent"
                     android:layout_below="@+id/tv_news_heading"
                     >
-                    <include layout="@layout/news_card_list"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"/>
                 </android.support.v4.widget.NestedScrollView>
             </LinearLayout>
         </ScrollView>
