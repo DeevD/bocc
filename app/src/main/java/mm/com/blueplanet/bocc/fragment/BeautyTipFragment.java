@@ -93,7 +93,7 @@ public class BeautyTipFragment extends Fragment {
             @Override
             public void run() {
                 try{
-                   Thread.sleep(500);
+                   //Thread.sleep(500);
 
                 }catch (Exception e){
                     e.printStackTrace();
