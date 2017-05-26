@@ -1,6 +1,8 @@
 package mm.com.blueplanet.bocc.rest;
 
 import mm.com.blueplanet.bocc.data.model.BeautyTipResponse;
+import mm.com.blueplanet.bocc.data.model.FortuneResult;
+import mm.com.blueplanet.bocc.data.model.FortuneResultResponse;
 import mm.com.blueplanet.bocc.data.model.GoldAndExchangeRateResponse;
 import mm.com.blueplanet.bocc.data.model.NewsResponse;
 import retrofit2.Call;
@@ -21,6 +23,9 @@ public interface ApiInterface {
 
     @GET("?route=latest_news")
     Call<NewsResponse> getLatestNews(@Query("api_key") String api_key);
+
+    @GET("?route=fortune_result")
+    Call<FortuneResultResponse> getFortuneResultByKeyword(@Query("api_key") String api_key, @Query("keyword") String keyword);
 
 
 }

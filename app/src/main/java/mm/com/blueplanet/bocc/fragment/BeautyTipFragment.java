@@ -131,7 +131,7 @@ public class BeautyTipFragment extends Fragment {
             });
         } catch (Exception e) {
             mProgressDialog.dismiss();
-            Log.d(TAG, "retrofit block : " + e.toString());
+                Log.d(TAG, "retrofit block : " + e.toString());
         }
     }
 
