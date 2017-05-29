@@ -47,7 +47,10 @@ public class FortuneFragment extends Fragment{
                 .setAction("Action", null).show();
     }
 
-
+    /***
+     * To go to activity detail with respect to clicked number and keyword
+     * @param : String title, String keyword
+     * ***/
     private void goToFortuneDetailActivity(String title, String keyword){
         Intent intent = new Intent(getActivity(), FortuneDetailActivity.class);
         intent.putExtra("IE_FORTUNE_TITLE",title);

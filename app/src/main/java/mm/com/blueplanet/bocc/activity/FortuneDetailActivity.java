@@ -65,6 +65,10 @@ public class FortuneDetailActivity extends AppCompatActivity {
         loadDataFromAPI();
     }
 
+    /***
+     * To initialize empty Data set on recycler view
+     * @param : no param
+     * */
     private void setEmptyFortuneResult()
     {
         List<FortuneResult> sampleData = Collections.emptyList();

@@ -17,6 +17,12 @@ public class ApiClient {
 
     private static Retrofit retrofit = null;
 
+
+    /***
+     * Http client setting can be configured and it will return that configured setting
+     * @param : no param
+     * @return : Retrofit httpClient
+     * */
     public static Retrofit getClient(){
         if(retrofit == null){
             final OkHttpClient okHttpClient = new OkHttpClient.Builder()

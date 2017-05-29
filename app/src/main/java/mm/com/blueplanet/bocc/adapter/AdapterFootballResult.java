@@ -51,6 +51,7 @@ public class AdapterFootballResult extends RecyclerView.Adapter<RecyclerView.Vie
         footballResultHolder.txtResultDate.setText(current.match_date);
         footballResultHolder.txtResultContent.setText(current.content);
 
+        //For later use of splitting string, currently in testing
         /*String content_result = current.content;
         String[] arrContent = content_result.split(":");
         Log.d("#TestData", arrContent[0]);*/

@@ -12,8 +12,8 @@ public class Constants {
 
     public static final int READ_TIMOUT = 20; //in second
 
-    //public static final String BASE_URL= "http://ooredoo.blueplanet.com.mm/bocc/";
-    public static final String BASE_URL= "http://192.168.100.195/bocc/";
+    //public static final String BASE_URL= "http://ooredoo.blueplanet.com.mm/bocc/"; // for live server connection
+    public static final String BASE_URL= "http://192.168.100.195/bocc/"; // for local development. it can be used as toggle to live server connection
 
 
 }

@@ -10,7 +10,9 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 /**
- * Created by smmon on 5/16/17.
+ * Created by Htoo Maung Thait on 5/16/17.
+ *
+ * This interface is a collection of request to api. API request Edition or adding new can be done here.s
  */
 
 public interface ApiInterface {
