@@ -72,6 +72,13 @@ public class FortuneDetailActivity extends AppCompatActivity {
 
     }
 
+
+    /***
+     *  To Load Data of fortune result with retrofit and setting adapter to display data
+     *  @author : Htoo Maung Thait (htoomaungthait@gmail.com)
+     *  @since : 2017-05-26
+     *  @param : no param
+     *  @return : no*/
     private void loadDataFromAPI()
     {
         try{

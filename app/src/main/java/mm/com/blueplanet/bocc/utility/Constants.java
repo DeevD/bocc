@@ -1,7 +1,7 @@
 package mm.com.blueplanet.bocc.utility;
 
 /**
- * Created by smmon on 5/17/17.
+ * Created by Htoo Maung Thait on 5/17/17.
  */
 
 public class Constants {

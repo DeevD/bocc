@@ -6,17 +6,27 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="mm.com.blueplanet.bocc.activity.FortuneDetailActivity"
-    tools:showIn="@layout/activity_fortune_detail">
+    tools:showIn="@layout/activity_fortune_detail"
+    >
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/astrology"/>
 
-
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_fortune_result"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/margin_medium_2"
-        android:scrollbars="vertical"/>
+        android:background="#99FFFFFF">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fortune_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_medium_2"
+            android:scrollbars="vertical"/>
+
+    </FrameLayout>
+
 
 
 
