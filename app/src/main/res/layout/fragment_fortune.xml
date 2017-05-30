@@ -7,20 +7,31 @@
     tools:context="mm.com.blueplanet.bocc.fragment.FortuneFragment"
     tools:showIn="@layout/fragment_fortune">
 
-
-    <ScrollView
-        android:id="@+id/sv_horo_number"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        >
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        android:src="@drawable/astrology"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF">
+        <ScrollView
+            android:id="@+id/sv_horo_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             >
-            <include layout="@layout/horo_number"/>
-        </FrameLayout>
-    </ScrollView>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <include layout="@layout/horo_number"/>
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_call_for_fortune"
         android:layout_width="72dp"

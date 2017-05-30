@@ -5,9 +5,11 @@ import android.content.Context;
 
 /**
  * Created by smmon on 3/11/17.
+ * Called when the application is starting, before any other application objects have been created.
  */
 
 public class BOCCApp extends Application {
+
 
     public static Context context;
 
