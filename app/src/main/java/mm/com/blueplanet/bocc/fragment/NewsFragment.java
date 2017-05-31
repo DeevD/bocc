@@ -58,22 +58,36 @@ public class NewsFragment extends Fragment {
 
 
         initGerContent();
+        initNewsContent();
         loadDataFromAPI();
 
         return  view;
     }
+    /***
+     * To initialized empty data set to recycler view of gold and exchange rates
+     * @param : no param
+     * */
     private void initGerContent()
     {
         List<GoldAndExchangeRate> sampleData = new ArrayList<GoldAndExchangeRate>();
         mRvGer.setAdapter(new AdapterGoldAndExchangeRate(sampleData, R.layout.ger_card_list, BOCCApp.getContext()));
 
     }
+    /***
+     * To initialized empty data set to recycler view of gold and exchange rates
+     * @param : no param
+     * */
     private void  initNewsContent()
     {
         List<News> sampleData = new ArrayList<News>();
         mRvNews.setAdapter(new AdapterNews(sampleData, R.layout.news_card_list, BOCCApp.getContext()));
     }
 
+
+    /***
+     * To load data from API of ger and news to each recycler view.
+     * @param : no param
+     * */
     private void loadDataFromAPI()
     {
         mProgressDialog =  new ProgressDialog(getContext());

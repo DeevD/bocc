@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="96dp"
+    android:layout_marginTop="@dimen/margin_small"
+    android:id="@+id/ll_fortune_result_card">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="96dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="96dp"
+            android:padding="@dimen/margin_small"
+            android:background="@color/colorPrimaryLight"
+            >
+            <mm.com.blueplanet.bocc.component.textView.MMTextView
+                android:id="@+id/tv_fortune_published_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20th, March, 2017"/>
+            <mm.com.blueplanet.bocc.component.textView.MMTextView
+                android:id="@+id/tv_fortune_result_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_text_px0.5"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_below="@+id/tv_fortune_published_date"/>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

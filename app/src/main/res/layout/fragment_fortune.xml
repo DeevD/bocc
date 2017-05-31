@@ -7,22 +7,40 @@
     tools:context="mm.com.blueplanet.bocc.fragment.FortuneFragment"
     tools:showIn="@layout/fragment_fortune">
 
-
-    <ScrollView
-        android:id="@+id/sv_horo_number"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        >
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
-            >
-            <include layout="@layout/horo_number"/>
-        </FrameLayout>
-    </ScrollView>
+        android:src="@drawable/astrology"
+        android:scaleType="centerCrop"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99FFFFFF">
+        <ScrollView
+            android:id="@+id/sv_horo_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <include layout="@layout/horo_number"/>
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_call_for_fortune"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:src="@drawable/ic_phone_in_talk_black_24dp"/>
 
 
 

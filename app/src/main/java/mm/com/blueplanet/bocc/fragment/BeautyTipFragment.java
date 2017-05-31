@@ -84,6 +84,10 @@ public class BeautyTipFragment extends Fragment {
         return view;
     }
 
+    /***
+     * To set empty or sample data to beauty tip recycler view
+     * @param: no param
+     * */
     private void setSampleBeautyTip()
     {
         List<BeautyTip> sampleData = new ArrayList<BeautyTip>();
@@ -94,6 +98,10 @@ public class BeautyTipFragment extends Fragment {
 
         m_rv_BeautyTip.setAdapter(new AdapterBeautyTip(sampleData, R.layout.beautytip_card_list, BOCCApp.getContext()));
     }
+    /****
+     * To load data from API of beauty tip to its recycler view
+     * @param: no param
+     * */
     private void loadDataFromAPI(){
 //        mProgressDialog =  new ProgressDialog(getContext());
 //        mProgressDialog.setMax(100);
@@ -146,7 +154,7 @@ public class BeautyTipFragment extends Fragment {
             });
         } catch (Exception e) {
             mProgressDialog.dismiss();
-            Log.d(TAG, "retrofit block : " + e.toString());
+                Log.d(TAG, "retrofit block : " + e.toString());
         }
     }
 
