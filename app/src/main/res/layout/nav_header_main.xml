@@ -3,12 +3,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="@drawable/menu_header1"
-    android:padding="@dimen/margin_medium_2"
+    android:background="@drawable/ic_content_center1"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:gravity="bottom"
     android:fitsSystemWindows="true">
-
-
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000">
+    </View>
 </LinearLayout>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="72dp"
     android:id="@+id/ll_beautyTipCard"
@@ -10,7 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/cardViewMiniHeight2"
         android:layout_marginTop="@dimen/margin_medium"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp"
         android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginBottom="9dp"
         android:layout_marginRight="@dimen/margin_medium_2">
 
         <RelativeLayout
@@ -19,11 +24,14 @@
 
             >
             <ImageView
+                android:padding="5dp"
                 android:id="@+id/iv_beauty_tip_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_date_range_black_24dp"/>
             <TextView
+                android:padding="8dp"
+                android:textColor="#000"
                 android:id="@+id/tv_beauty_tip_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,14 +40,17 @@
                 android:layout_marginLeft="@dimen/margin_xlarge"
                 android:layout_marginTop="@dimen/margin_small"/>
             <ImageView
+                android:padding="5dp"
                 android:id="@+id/iv_beauty_tip_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_beauty_tip_date"
-                android:src="@drawable/ic_reorder_black_24dp"/>
+                android:src="@drawable/lipstick_botton"/>
             <mm.com.blueplanet.bocc.component.textView.MMTextView
                 android:id="@+id/tv_beauty_tip_content"
                 android:layout_width="match_parent"
+                android:padding="8dp"
+                android:textColor="#000"
                 android:layout_height="wrap_content"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, culpa delectus dicta distinctio doloribus earum eveniet illo ipsam ipsum itaque magni molestiae omnis quam quibusdam velit veniam vero voluptas voluptatibus. "
                 android:layout_marginTop="@dimen/margin_v_small"

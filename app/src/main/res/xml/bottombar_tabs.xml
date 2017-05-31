@@ -1,0 +1,22 @@
+<tabs>
+    <tab
+        id="@+id/action_hot_line"
+        icon="@drawable/phone_call_botton"
+        title="Hot Line" />
+    <tab
+        id="@+id/action_news"
+        icon="@drawable/news_botton"
+        title="News" />
+    <tab
+        id="@+id/action_football"
+        icon="@drawable/football"
+        title="Football" />
+    <tab
+        id="@+id/action_fortune"
+        icon="@drawable/astrology_botton"
+        title="Fortune" />
+    <tab
+        id="@+id/action_beauty_tip"
+        icon="@drawable/lipstick_botton"
+        title="Beauty" />
+</tabs>

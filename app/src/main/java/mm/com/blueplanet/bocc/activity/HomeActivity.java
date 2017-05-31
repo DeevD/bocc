@@ -3,9 +3,11 @@ package mm.com.blueplanet.bocc.activity;
 *  Testing source tree comment
 * */
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,14 +17,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnTabSelectListener;
+
 import butterknife.ButterKnife;
 import mm.com.blueplanet.bocc.R;
+import mm.com.blueplanet.bocc.data.model.GoldAndExchangeRate;
 import mm.com.blueplanet.bocc.fragment.AboutUsFragment;
 import mm.com.blueplanet.bocc.fragment.BeautyTipFragment;
+import mm.com.blueplanet.bocc.fragment.FavEmergencyFragment;
 import mm.com.blueplanet.bocc.fragment.FavouriteFragment;
 import mm.com.blueplanet.bocc.fragment.FootballFragment;
 import mm.com.blueplanet.bocc.fragment.FortuneFragment;
+import mm.com.blueplanet.bocc.fragment.GoldAndNewsFragment;
+import mm.com.blueplanet.bocc.fragment.GoldExchangeFragment;
 import mm.com.blueplanet.bocc.fragment.HotLineFragment;
+import mm.com.blueplanet.bocc.fragment.HotlineFrag;
+import mm.com.blueplanet.bocc.fragment.NewFragment;
 import mm.com.blueplanet.bocc.fragment.NewsFragment;
 import mm.com.blueplanet.bocc.fragment.TakeATourFragment;
 
@@ -32,9 +43,42 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
+
+        BottomBar bottomBar = (BottomBar)findViewById(R.id.bottomBar);
+        bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
+            @Override
+            public void onTabSelected(@IdRes int tabId) {
+                switch (tabId)
+                {
+                    case R.id.action_hot_line:{
+                        navigateToHotLine();
+                        break;
+                    }
+                    case R.id.action_news:{
+                        navigateToNews();
+                        break;
+                    }
+                    case R.id.action_football:{
+                        navigateToFootball();
+                        break;
+                    }
+                    case R.id.action_beauty_tip:{
+                        navigateToBeautyTip();
+                        break;
+                    }
+                    case R.id.action_fortune:{
+                        navigateToFortune();
+                        break;
+
+                    }
+
+                }
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -49,41 +93,51 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             navigateToHotLine();
         }
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.action_hot_line :
-                        navigateToHotLine();
-                        return true;
-                    case R.id.action_news :
-                        navigateToNews();
-                        return true;
-                    case R.id.action_football :
-                        navigateToFootball();
-                        return true;
-                    case R.id.action_fortune :
-                        navigateToFortune();
-                        return true;
-                    case R.id.action_beauty_tip :
-                        navigateToBeautyTip();
-                        return true;
-                }
-                return false;
-            }
-        });
+//        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected( MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.action_hot_line :
+//                        navigateToHotLine();
+//                        return true;
+//                    case R.id.action_news :
+//                        navigateToNews();
+//                        return true;
+//                    case R.id.action_football :
+//                        navigateToFootball();
+//                        return true;
+//                    case R.id.action_fortune :
+//                        navigateToFortune();
+//                        return true;
+//                    case R.id.action_beauty_tip :
+//                        navigateToBeautyTip();
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
     }
 
     private void navigateToHotLine(){
+        HotlineFrag hotlineFrag = new HotlineFrag();
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fl_container, HotLineFragment.newInstance())
+                .replace(R.id.fl_container, hotlineFrag)
                 .commit();
     }
     private void navigateToNews(){
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fl_container, NewsFragment.newInstance())
-                .commit();
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.fl_container, GoldExchangeFragment.newInstance())
+//                .commit();
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.fl_container2, NewFragment.newInstance())
+//                .commit();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().hide(getSupportFragmentManager().findFragmentById(R.id.fl_container));
+        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_container, GoldAndNewsFragment.newInstace(), "Call Fragment").commit();
+        //getFragmentManager().beginTransaction().hide(getFragmentManager().findFragmentById(R.id.fl_container)).commit();//
+
+
     }
     private void navigateToFootball(){
         getSupportFragmentManager().beginTransaction()
@@ -114,9 +168,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void navigateToFavourite(){
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fl_container, FavouriteFragment.newInstance())
                 .commit();
+
+
     }
 
 
@@ -137,10 +194,22 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.action_favourite :
                 navigateToFavourite();
                 return true;
+
+            case R.id.homeScreen:{
+                navigateToHome();
+                return true;
+            }
         }
 
         return true;
 
+    }
+
+    private void navigateToHome() {
+        HotlineFrag hotlineFrag = new HotlineFrag();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fl_container, hotlineFrag)
+                .commit();
     }
 
     @Override

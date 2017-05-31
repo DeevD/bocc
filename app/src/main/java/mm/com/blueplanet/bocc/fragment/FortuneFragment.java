@@ -3,18 +3,24 @@ package mm.com.blueplanet.bocc.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+import com.eminayar.panter.interfaces.OnTextInputConfirmListener;
 
-import butterknife.BindView;
+import com.eminayar.panter.DialogType;
+import com.eminayar.panter.PanterDialog;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mm.com.blueplanet.bocc.R;
 import mm.com.blueplanet.bocc.activity.FortuneDetailActivity;
+import com.eminayar.panter.enums.Animation;
 
 
 /**
@@ -32,19 +38,111 @@ public class FortuneFragment extends Fragment{
         return fragment;
     }
 
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_fortune, container, false);
+        setHasOptionsMenu(true);
+        new PanterDialog(getActivity())
+                .setHeaderBackground(R.drawable.background_dialog_blue)
+                .setHeaderLogo(R.drawable.astrology)
+                .setTitle("Enter your birth date")
+                .setPositive("I GOT IT")
+                .setNegative("DISMISS")
+                .setMessage("Enter Your birth date")
+                .withAnimation(Animation.POP)
+                .setDialogType(DialogType.INPUT)
+                .isCancelable(false)
+                .input(" Enter Date such 31 ", new OnTextInputConfirmListener() {
+                    @Override
+                    public void onTextInputConfirmed(String input) {
+                        int length = input.length();
+                        char first = input.charAt(0);
+                        char second = input.charAt(1);
+
+                        int firstNum = Integer.parseInt(input.valueOf(first));
+                        int secondNum = Integer.parseInt(input.valueOf(second));
+                        int finalNum = firstNum + secondNum;
+
+
+
+//                                String str="1234";
+//                                for(int i=0;i<input.length();i++)
+//                                {
+//                                    char c=str.charAt(i);
+//                                    Character.getNumericValue(c);
+//                                    Toast.makeText(getActivity(), " Char to integer " + Character.getNumericValue(c),Toast.LENGTH_SHORT).show();
+//
+//                                    System.out.println(Character.getNumericValue(c));
+//                                    System.out.println(Integer.parseInt(str.valueOf(c)));
+//                                }
+                        Toast.makeText(getActivity(),"  Total  "+ finalNum,Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .show();
         ButterKnife.bind(this, view);
+
+
+
 
         return view;
     }
 
-    @OnClick(R.id.fab_call_for_fortune)
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.astrology_menu,menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.add_date:{
+                new PanterDialog(getActivity())
+                        .setHeaderBackground(R.drawable.background_dialog_blue)
+                        .setHeaderLogo(R.drawable.astrology)
+                        .setTitle("Enter your birth date")
+                        .setPositive("I GOT IT")
+                        .setNegative("DISMISS")
+                        .setMessage("Enter Your birth date")
+                        .withAnimation(Animation.POP)
+                        .setDialogType(DialogType.INPUT)
+                        .isCancelable(false)
+                        .input(" Enter Date such 31 ", new OnTextInputConfirmListener() {
+                            @Override
+                            public void onTextInputConfirmed(String input) {
+                                int length = input.length();
+                                char first = input.charAt(0);
+                                char second = input.charAt(1);
+
+                                int firstNum = Integer.parseInt(input.valueOf(first));
+                                int secondNum = Integer.parseInt(input.valueOf(second));
+                                int finalNum = firstNum + secondNum;
+
+
+
+//                                String str="1234";
+//                                for(int i=0;i<input.length();i++)
+//                                {
+//                                    char c=str.charAt(i);
+//                                    Character.getNumericValue(c);
+//                                    Toast.makeText(getActivity(), " Char to integer " + Character.getNumericValue(c),Toast.LENGTH_SHORT).show();
+//
+//                                    System.out.println(Character.getNumericValue(c));
+//                                    System.out.println(Integer.parseInt(str.valueOf(c)));
+//                                }
+                                Toast.makeText(getActivity(),"  Total  "+ finalNum,Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .show();
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     public void onTabCallForFortune(View view){
-        Snackbar.make(view, "It will make call to call center for your fortune soon !", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
+
     }
 
 

@@ -13,6 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+
+import net.bohush.geometricprogressview.GeometricProgressView;
+import net.bohush.geometricprogressview.TYPE;
+
+import org.fingerlinks.mobile.android.navigator.builder.Builders;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,33 +52,44 @@ public class FootballFragment extends Fragment {
     private RecyclerView mRVFootballResult;
     private AdapterFootballResult mAdapter;
 
+    FootballAdapter footballAdapter;
+
 
     public static FootballFragment newInstance(){
         FootballFragment fragment = new FootballFragment();
         return  fragment;
     }
+    GeometricProgressView geometricProgressView;
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_football, container, false);
+        List<DataFootballResult> data = new ArrayList<>();
+        footballAdapter = new FootballAdapter(data,getActivity());
+        footballAdapter.openLoadAnimation();
+
         new FootballResultAsync().execute();
         return  mView;
     }
 
     private class FootballResultAsync extends AsyncTask<String, String, String>{
-        ProgressDialog pdLoading = new ProgressDialog(getContext());
+//        ProgressDialog pdLoading = new ProgressDialog(getContext());
         HttpURLConnection conn;
         URL url = null;
+
 
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            geometricProgressView = (GeometricProgressView)mView.findViewById(R.id.foot_progress_view);
+            geometricProgressView.setDuration(1000);
+            geometricProgressView.setVisibility(View.VISIBLE);
+
             //this method will be running on UI thread
-            pdLoading.setMessage("\t Results are loading ...");
-            pdLoading.setCancelable(true);
-            pdLoading.show();
+//            pdLoading.setMessage("\t Results are loading ...");
+//            pdLoading.setCancelable(true);
+//            pdLoading.show();
         }
 
         @Override
@@ -134,11 +151,11 @@ public class FootballFragment extends Fragment {
         @Override
         protected void onPostExecute(String result) {
             //super.onPostExecute(s);
-
             //this method will run on UI thread
-            pdLoading.dismiss();
+//            pdLoading.dismiss();
+
             List<DataFootballResult> data = new ArrayList<>();
-            pdLoading.dismiss();
+           // pdLoading.dismiss();
             //Log.d("#API_Data", result);
 
             try {
@@ -156,8 +173,13 @@ public class FootballFragment extends Fragment {
 
                     //Setup and handover data to recycler view
                     mRVFootballResult = (RecyclerView) mView.findViewById(R.id.rv_footballResult);
-                    mAdapter = new AdapterFootballResult(getContext(), data);
-                    mRVFootballResult.setAdapter(mAdapter);
+                    footballAdapter = new FootballAdapter(data,getActivity());
+                    footballAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
+                    mRVFootballResult.setAdapter(footballAdapter);
+                    geometricProgressView.setVisibility(View.GONE);
+
+                    //mAdapter = new AdapterFootballResult(getContext(), data);
+                   // mRVFootballResult.setAdapter(mAdapter);
                     mRVFootballResult.setLayoutManager(new LinearLayoutManager(getContext()));
                 }
 

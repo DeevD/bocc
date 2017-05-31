@@ -4,21 +4,27 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:id="@+id/homeScreen"
+            app:showAsAction="ifRoom">
+        </item>
+        <item
             android:id="@+id/action_about_us"
             android:enabled="true"
-            android:icon="@drawable/ic_assignment_black_24dp"
+            android:icon="@drawable/about"
             android:title="About Us"
             app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/action_take_a_tour"
             android:enabled="true"
-            android:icon="@drawable/ic_card_travel_black_24dp"
+            android:icon="@drawable/info"
             android:title="Take a tour"
             app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/action_favourite"
             android:enabled="true"
-            android:icon="@drawable/ic_favorite_black_24dp"
+            android:icon="@drawable/favorite_logo"
             android:title="Favourite"
             app:showAsAction="ifRoom"/>
     </group>

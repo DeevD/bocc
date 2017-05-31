@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import mm.com.blueplanet.bocc.R;
+import mm.com.blueplanet.bocc.adapter.FavCallCenter;
 
 /**
  * Created by smmon on 3/13/17.
@@ -22,8 +23,12 @@ public class FavouriteFragment extends Fragment{
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_favourite, container, false);
+
+        FavCallCenter favCallCenter = new FavCallCenter();
+        getFragmentManager().beginTransaction().replace(R.id.fav_call,favCallCenter).commit();
+
 
         return view;
     }

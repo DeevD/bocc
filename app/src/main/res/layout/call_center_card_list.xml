@@ -11,37 +11,40 @@
         android:elevation="@dimen/card_elevation"
         style="@style/cardView"
         >
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPrimaryLight">
+
             <ImageView
                 android:id="@+id/iv_1875"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/ic_1875"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_1875" />
+
             <TextView
                 android:id="@+id/tv_1875_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="8dp"
                 android:text="1875 Hot Line"
                 android:textSize="@dimen/text_regular_3x"
-                android:textStyle="bold"
-                android:layout_marginLeft="56dp"
-                android:layout_marginTop="8dp"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_1875_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="To enquiry about daily life"
                 android:layout_below="@+id/tv_1875_header"
                 android:layout_marginLeft="56dp"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="4dp"
+                android:text="To enquiry about daily life" />
 
 
         </RelativeLayout>
-
 
 
     </android.support.v7.widget.CardView>

@@ -106,7 +106,6 @@ public class NewsFragment extends Fragment {
                     if(statusCode == HttpURLConnection.HTTP_OK){
                         List<GoldAndExchangeRate> goldAndExchangeRates = response.body().getResults();
                         //Log.d(TAG, "result :"+goldAndExchangeRates.toString());
-
                         mRvGer.setAdapter(new AdapterGoldAndExchangeRate(goldAndExchangeRates, R.layout.ger_card_list, BOCCApp.getContext()));
                     }
                     /*if(mProgressDialog.isShowing()){

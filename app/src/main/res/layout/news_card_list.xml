@@ -1,40 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/ll_news">
 
     <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="@dimen/cardViewMiniHeight2"
-        android:layout_marginTop="@dimen/margin_medium"
-        android:layout_marginLeft="@dimen/margin_medium_2"
-        android:layout_marginRight="@dimen/margin_medium_2"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="4dp"
         >
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="@dimen/cardViewMiniHeight2"
-            android:background="#201e86e5"
-            android:padding="@dimen/margin_small"
+            android:background="#e0fcfaf9"
+            android:padding="10dp"
             >
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/news_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/seven_day"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/tv_news_heading"
+                android:layout_alignEnd="@+id/tv_news_heading"
+                android:layout_marginRight="11dp"
+                android:layout_marginEnd="11dp" />
+
             <mm.com.blueplanet.bocc.component.textView.MMTextView
                 android:id="@+id/tv_news_heading"
+                android:padding="5dp"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BBC NEWS"
-                android:textSize="@dimen/text_regular_2x"
+                android:textSize="16dp"
+                android:textColor="#bf8705"
                 android:textStyle="bold"/>
             <mm.com.blueplanet.bocc.component.textView.MMTextView
                 android:id="@+id/tv_news_post_date"
+                android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3 hr"
                 android:layout_alignParentRight="true"/>
             <mm.com.blueplanet.bocc.component.textView.MMTextView
                 android:id="@+id/tv_news_content"
+                android:padding="5dp"
+                android:textColor="#848181"
+                android:layout_toRightOf="@+id/news_icon"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/sample_text_px0.5"

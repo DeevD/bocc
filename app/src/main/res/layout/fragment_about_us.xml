@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<ScrollView xmlns:andoird="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mm.com.blueplanet.bocc.fragment.AboutUsFragment"
-    tools:showIn="@layout/fragment_about_us">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mm.com.blueplanet.bocc.fragment.AboutUsFragment">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
+        android:textColor="#000"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bocc_abbreviation"
+        android:text="@string/about"
+        android:layout_height="match_parent"
         android:layout_margin="@dimen/margin_medium_2"/>
 
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:gravity="center"
+            android:text="Power by "
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="132dp"
+            android:layout_marginStart="132dp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/power"
+            android:layout_toRightOf="@+id/power"
+            android:src="@drawable/logo_small"
+            android:layout_alignTop="@+id/power" />
+
+    </RelativeLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>

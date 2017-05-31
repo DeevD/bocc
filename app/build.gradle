@@ -45,6 +45,17 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.github.paolorotolo:appintro:4.1.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.13'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.sackcentury:shinebutton:0.1.7'
+    compile 'org.fingerlinks.mobile.android:Navigator:0.1.4'
+    compile 'com.roughike:bottom-bar:2.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'net.bohush.geometricprogressview:geometricprogressview:1.1.1'
+    compile 'com.eminayar.panterdialog:panter-dialog:0.0.2.1'
+    compile 'com.github.lsjwzh.RecyclerViewPager:lib:v1.1.2@aar'
+
     // retrofit, gson, okhttp start
 
 

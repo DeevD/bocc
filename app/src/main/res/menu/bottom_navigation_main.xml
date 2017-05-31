@@ -5,13 +5,13 @@
     <item
         android:id="@+id/action_hot_line"
         android:enabled="true"
-        android:icon="@drawable/ic_phone_in_talk_black_24dp"
+        android:icon="@drawable/phone_btn_bar"
         android:title="@string/lbl_hotline"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_news"
         android:enabled="true"
-        android:icon="@drawable/ic_receipt_black_24dp"
+        android:icon="@drawable/new_btn_bar"
         android:title="@string/lbl_news"
         app:showAsAction="ifRoom"/>
     <item

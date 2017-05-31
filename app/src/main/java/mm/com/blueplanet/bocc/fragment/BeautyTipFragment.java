@@ -14,6 +14,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+
+import net.bohush.geometricprogressview.GeometricProgressView;
+
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +25,7 @@ import java.util.List;
 import mm.com.blueplanet.bocc.BOCCApp;
 import mm.com.blueplanet.bocc.R;
 import mm.com.blueplanet.bocc.adapter.AdapterBeautyTip;
+import mm.com.blueplanet.bocc.adapter.BeautyAdapter;
 import mm.com.blueplanet.bocc.data.model.BeautyTip;
 import mm.com.blueplanet.bocc.data.model.BeautyTipResponse;
 import mm.com.blueplanet.bocc.rest.ApiClient;
@@ -35,7 +40,7 @@ import retrofit2.Response;
  */
 
 public class BeautyTipFragment extends Fragment {
-
+    BeautyAdapter beautyAdapter;
     private static final String TAG = "Beauty Tip";
     private RecyclerView m_rv_BeautyTip = null;
     private ProgressDialog mProgressDialog =  null;
@@ -48,11 +53,13 @@ public class BeautyTipFragment extends Fragment {
         }
     };
 
+    List<BeautyTip>data;
 
     public static BeautyTipFragment newInstance() {
         BeautyTipFragment fragment = new BeautyTipFragment();
         return fragment;
     }
+    GeometricProgressView geometricProgressView;
 
     @Nullable
     @Override
@@ -60,7 +67,12 @@ public class BeautyTipFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_beauty_tip, container, false);
         m_rv_BeautyTip = (RecyclerView) view.findViewById(R.id.rv_beautyTip);
 
+        beautyAdapter = new BeautyAdapter(data,getActivity());
+        beautyAdapter.openLoadAnimation();
         m_rv_BeautyTip.setLayoutManager(new LinearLayoutManager(BOCCApp.getContext()));
+        geometricProgressView = (GeometricProgressView)view.findViewById(R.id.beauty_progress_view);
+        geometricProgressView.setDuration(1000);
+        geometricProgressView.setVisibility(View.VISIBLE);
 
         setSampleBeautyTip();
         loadDataFromAPI();
@@ -83,23 +95,23 @@ public class BeautyTipFragment extends Fragment {
         m_rv_BeautyTip.setAdapter(new AdapterBeautyTip(sampleData, R.layout.beautytip_card_list, BOCCApp.getContext()));
     }
     private void loadDataFromAPI(){
-        mProgressDialog =  new ProgressDialog(getContext());
-        mProgressDialog.setMax(100);
-        mProgressDialog.setTitle("Beauty Tip Data Loading From Server");
-        mProgressDialog.setMessage("It is loading ....");
-        mProgressDialog.show();
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try{
-                   //Thread.sleep(500);
-
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-        }).start();
+//        mProgressDialog =  new ProgressDialog(getContext());
+//        mProgressDialog.setMax(100);
+//        mProgressDialog.setTitle("Beauty Tip Data Loading From Server");
+//        mProgressDialog.setMessage("It is loading ....");
+//        mProgressDialog.show();
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try{
+//                   //Thread.sleep(500);
+//
+//                }catch (Exception e){
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
 
         try {
             ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
@@ -110,15 +122,18 @@ public class BeautyTipFragment extends Fragment {
                     int statusCode = response.code();
                     //Log.d(TAG, response.raw().toString());
                     if (statusCode == HttpURLConnection.HTTP_OK) {
-                        List<BeautyTip> beautyTips = response.body().getResults();
-                        Log.d(TAG, "results : "+beautyTips.toString());
-                        m_rv_BeautyTip.setAdapter(new AdapterBeautyTip(beautyTips, R.layout.beautytip_card_list, getContext()));
-
+                       data = response.body().getResults();
+                        Log.d(TAG, "results : "+data.toString());
+                        //m_rv_BeautyTip.setAdapter(new AdapterBeautyTip(beautyTips, R.layout.beautytip_card_list, getContext()));
+                        beautyAdapter = new BeautyAdapter(data,getActivity());
+                        beautyAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
+                        m_rv_BeautyTip.setAdapter(beautyAdapter);
+                        geometricProgressView.setVisibility(View.GONE);
 
                     }
-                    if(mProgressDialog.isShowing()){
-                        mProgressDialog.dismiss();
-                    }
+//                    if(mProgressDialog.isShowing()){
+//                        mProgressDialog.dismiss();
+//                    }
 
                 }
 

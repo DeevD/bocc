@@ -1,29 +1,19 @@
 package mm.com.blueplanet.bocc.fragment;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TabHost;
-import android.widget.TabWidget;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import mm.com.blueplanet.bocc.R;
-import mm.com.blueplanet.bocc.activity.HotLineDetailActivity;
+import mm.com.blueplanet.bocc.activity.CallCenterDetailActivity;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -50,12 +40,6 @@ public class HotLineFragment extends Fragment {
         TabSetup(thHotLine);
 
 
-
-
-
-
-
-
         return  rootView;
     }
 
@@ -79,6 +63,7 @@ public class HotLineFragment extends Fragment {
         spec.setContent(R.id.tab_emergency);
         spec.setIndicator("Emergency");
         tabHost.addTab(spec);
+
         TextView tvEmergency = (TextView) tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.title);
         tvEmergency.setTextSize(13);
 
@@ -154,9 +139,9 @@ public class HotLineFragment extends Fragment {
 
 
     private void goToCallCenterDetail(String hotlineTitle){
-        Intent intent = new Intent(getActivity(), HotLineDetailActivity.class);
+        Intent intent = new Intent(getActivity(), CallCenterDetailActivity.class);
         intent.putExtra("IE_HOTLINE_TITLE", hotlineTitle);
-        //Intent intent = HotLineDetailActivity.newIntent(hotlineTitle);
+        //Intent intent = CallCenterDetailActivity.newIntent(hotlineTitle);
         startActivity(intent);
     }
 

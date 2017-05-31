@@ -4,23 +4,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mm.com.blueplanet.bocc.fragment.FavouriteFragment"
-    tools:showIn="@layout/fragment_favourite">
+    tools:context="mm.com.blueplanet.bocc.fragment.FavouriteFragment">
 
-    <TextView
-        android:id="@+id/tv_fav_header"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="This is favourite Page"
-        android:layout_margin="@dimen/margin_medium_2"/>
-    <TextView
-        android:id="@+id/tv_fav_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sample_text"
-        android:layout_margin="@dimen/margin_medium_2"
-        android:layout_below="@+id/tv_fav_header"/>
+        android:id="@+id/fav_call"
+        android:layout_height="wrap_content">
 
+    </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fav_emergency"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:id="@+id/fav_gov"
+    android:layout_height="wrap_content">
+
+</FrameLayout>
 
 </RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/detail_icon"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_1876" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="English Advanced"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_back_button" />
+
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/add" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+                <!--android:text="84 Ks / Day"-->
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="3"
+                    android:text="1876 hotline သည် လူကြီးမင်းတို့၏ အထွေထွေစုံစမ်းမေးမြန်းမှုများကို ၂၄ နာရီပတ်လုံး ဖြေကြားပေးသည့် contact center ၏ hotline ဝန်ဆောင်မှု တစ်ခုဖြစ်သည်။
+1876 hotline ၏ Directory Service တွင် စီးပွားရေးလုပ်ငန်းများ၏ ဖုန်းနံပါတ်နှင့် လိပ်စားများ၊ ဌာနဆိုင်ရာလုပ်ငန်းများ၏ ဖုန်းနံပါတ်နှင့် လိပ်စာများ၊ ဆေးရုံ၊ဆေးခန်း၊ ဟိုတယ်၊ ရုပ်ရှင်ရုံ၊ ပန်းခြံ၊ shopping center ၊ အသင်းအဖွဲ့များ၏ လိပ်စာများ အစရှိသည်တို့ မေးမြန်းနိုင်ပါသည်။"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="3"
+                    android:text="ထို့အပြင် အချိန်နှင့်တပြေးညီ ရွှေစျေးနှင့် ငွေကြေးလဲလှယ်နှုန်းများ၊ မိုးလေဝသ သတင်းများ၊ မြေငလျင် သတင်းများ၊ မီးလောင်မှုသတင်းများ၊ လတ်တလော Update သတင်းများ၊ တစ်ပတ်အတွင်း ရုံတင်ြပသလျက်ရှိသော ဇာတ်ကားများ၊ လက်ဝှေ့အားကစားပွဲလက်မှတ်၊ အနုပညာရှင်များ၏ ရှိုးပွဲလက်မှတ်၊ ဖျော်ဖြေပွဲလက်မှတ် ဝန်ဆောင်မှုများအတွက် ဆက်သွယ်မေးမြန်းနိုင်ပါသည်။
+အထွေထွေ ဗဟုသုတများကိုလည်း ဖြေကြားပေးလျက်ရှိပါသည်။
+ထို့အပြင် အချိန်နှင့်တပြေးညီ ရွှေစျေးနှင့် ငွေကြေးလဲလှယ်နှုန်းများ၊ မိုးလေဝသ သတင်းများ၊ မြေငလျင် သတင်းများ၊ မီးလောင်မှုသတင်းများ၊ လတ်တလော Update သတင်းများ၊ တစ်ပတ်အတွင်း ရုံတင်ြပသလျက်ရှိသော ဇာတ်ကားများ၊ လက်ဝှေ့အားကစားပွဲလက်မှတ်၊ အနုပညာရှင်များ၏ ရှိုးပွဲလက်မှတ်၊ ဖျော်ဖြေပွဲလက်မှတ် ဝန်ဆောင်မှုများအတွက် ဆက်သွယ်မေးမြန်းနိုင်ပါသည်။
+အထွေထွေ ဗဟုသုတများကိုလည်း ဖြေကြားပေးလျက်ရှိပါသည်။"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <!--android:textAlignment="center"-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="116dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="89dp"
+            android:background="@drawable/callcenter_icon"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:text="Subscribe"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:paddingTop="8dp"
+                    android:text="Powered By  "
+
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="173dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/ic_content_center1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

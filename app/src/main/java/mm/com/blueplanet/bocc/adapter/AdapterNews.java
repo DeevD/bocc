@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -41,6 +42,28 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsViewHolder
         holder.keyword.setText(newses.get(position).getKeyword());
         holder.publishedDate.setText(newses.get(position).getDate());
         holder.content.setText(newses.get(position).getMessage());
+        int drawableIcon = getDrawableIcon(newses.get(position).getKeyword());
+        holder.icon.setImageResource(drawableIcon);
+    }
+
+    private int getDrawableIcon(String keyword) {
+        switch (keyword)
+        {
+            case "7DN":{
+
+                return R.drawable.sevens_day;
+
+            }
+            case "DVBNEWS":{
+                return R.drawable.dvb;
+            }
+            case "BBCNEWS":{
+                return R.drawable.bbc;
+            }
+
+            default:
+                return R.drawable.astrology;
+        }
     }
 
     @Override
@@ -54,6 +77,7 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsViewHolder
         TextView keyword;
         TextView publishedDate;
         TextView content;
+        ImageView icon;
 
         public NewsViewHolder(View itemView) {
             super(itemView);
@@ -62,6 +86,7 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.NewsViewHolder
             publishedDate = (TextView) itemView.findViewById(R.id.tv_news_post_date);
             content = (TextView) itemView.findViewById(R.id.tv_news_content);
             keyword = (TextView) itemView.findViewById(R.id.tv_news_heading);
+            icon = (ImageView)itemView.findViewById(R.id.news_icon);
 
         }
     }
